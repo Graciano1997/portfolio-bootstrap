@@ -9,9 +9,7 @@
   <title>Bootstrap exercise portfolio page</title>
 </head>
 
-<body >
-  <div class="p-0">
-
+<body class="container-fluid" >
     <header>
       <!-- navbar -->
       <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
@@ -45,15 +43,16 @@
       </nav>
     </header>
 
-    <main>
-      <section class="headline-section  my-2 container-fluid ">
+    <main class="container-fluid">
+
+      <section class="headline-section  my-2 container-lg">
         <div class="row d-flex justify-content-center">
           <div class="col-6 ">
-            <h1 class=" fw-bold display-2 text-dark" >I’m Alexandra. <br> Glad to see you!</h1>
+            <h1 class=" fw-bold display-2 text-primary" >I’m Alexandra. <br> Glad to see you!</h1>
             <p>I’m a software developer! I can help you build a product , feature or website Look through some of my
               work and experience!
               If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-            <p>LET’S CONNECT</p>
+            <p class="lead text-primary ">LET’S CONNECT</p>
             <ul class="list-group list-group-horizontal ">
               <li class="list-group-item border-0"><a href="#"><img src="/assets/img/twitter.svg" alt=""></a></li>
               <li class="list-group-item border-0"><a href="#"><img src="/assets/img/Linkedin icon.svg" alt=""></a></li>
@@ -65,9 +64,8 @@
         </div>
       </section>
 
-      <section class="card-section bg-light mt-5">
-        <div class="container-lg">
 
+      <section class="  mt-5 container-lg">
           <div class="row align-items-center justify-content-center g-5 py-2">
 
             <div class="col-12 bg-white rounded-5 border justify-content-center">
@@ -104,15 +102,15 @@
                 <div class="col-md-6 py-4">
                   <img src="assets/img/artpint.svg" alt="project nature" class="img-fluid rounded-start">
                 </div>
-                <div class="col-md-6 my-3 justify-content-start ">
-                  <div class="card-body">
-                    <h5 class="card-title fw-bold display-6  py-5 ">Multi-Post Stories</h5>
+                <div class="col-md-6 my-3  ">
+                  <div class="card-body  ustify-content-start ">
+                    <h5 class="card-title fw-bold display-6  py-5">Multi-Post Stories</h5>
                     <ul class="d-flex g-2 list-unstyled">
                       <li class=" px-2 py-1 "><a href="#" class="btn btn-outline-primary">FACEBOOK</a></li>
                       <li class=" px-2 py-1"><a href="#" class="btn btn-outline-primary">Full Stack Dev</a></li>
                       <li class=" px-2 py-1"><a href="#" class="btn btn-outline-primary">2015</a></li>
                     </ul>
-                    <p class="">
+                    <p class="lead justify-content-start px-2">
                       A daily selection of privately personalized reads; no accounts or sign-ups required.
                     </p>
                     <ul class="d-flex g-2 list-unstyled   list-unstyled ">
@@ -120,7 +118,7 @@
                       <li class=" px-2"><a href="#" class="btn btn-primary ">Css</a></li>
                       <li class=" px-2"><a href="#" class="btn btn-primary ">JavaScript</a></li>
                     </ul>
-                    <a class="btn btn-outline-primary btn-lg  bg-light text-primary">See Project</a>
+                    <a class="btn btn-outline-primary btn-lg  px-2 py-1 bg-light text-primary align-self-start">See Project</a>
                     <p>
 
                   </div>
@@ -184,8 +182,6 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
       </section>
 
       <section class="about-section bg-blue mt-5">
@@ -237,32 +233,34 @@
         </div>
         </div>
       </section>
-      <section class="">
-        <div class="container-lg contact">
-          <div class="row">
+      <section class="row contact  justify-content-center align-items-center ">
+      <div class="col-4 justify-content-center  ">
+        <h2 class="text-center my-4 pt-5 text-white text-center">Contact me</h2>
+        <p class="text-white text-center fs-5">
+          If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
+I’d love to help with it!
+        </p>
+          <form class="row g-3 justify-content-center">
 
-            <form action="" >
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-              </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            
-          </form>
-        </div>
-        </div>
-
-      </section>
-
+            <div class="col-md-12">
+              <label for="inputName" class="form-label d-none">Name</label>
+              <input type="text" class="form-control p-2" id="inputName" placeholder="your name">
+            </div>
+            <div class="col-md-12">
+              <label for="inputEmai" class="form-label d-none" >Email</label>
+              <input type="email" class="form-control p-2" id="inputEmai" placeholder="your email">
+            </div>
+          <div class="col-12">
+            <label for="inputSms" class="form-label d-none">Address</label>
+            <textarea name="sms" class="form-control" id="" cols="30" rows="10" placeholder="write here your sms"></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-outline-primary bg-white">Get in Touch</button>
+          </div>
+        </form>
+    </div>
+    </section>
+    
     </main>
   </div>
   <script src="assets/js/bootstrap.bundle.min.js"></script>

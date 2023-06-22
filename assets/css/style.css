@@ -1,0 +1,12 @@
+.headline-section { 
+ /*   background-image: url(../img/headerbg.svg);
+   background-size: 100%;
+   height: 135vh;
+   background-repeat: no-repeat;
+   */
+
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+  }
+
